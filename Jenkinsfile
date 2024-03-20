@@ -15,12 +15,7 @@ pipeline {
             """
         }
     }
-    stages {
-        stage('Clone Repo') {
-            steps {
-                git (url: "git@github.com:scocks/app-1.git", credentialsId: "scocks", branch: "main")
-            }
-        }
+    stages {    
         stage('Build and Test') {
             steps {
                 container('jdk17') {                                        
