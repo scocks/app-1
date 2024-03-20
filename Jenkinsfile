@@ -21,18 +21,6 @@ pipeline {
                 git (url: "git@github.com:scocks/app-1.git", credentialsId: "scocks", branch: "main")
             }
         }
-        stage('Generate Properties') {
-            steps {
-                container('jdk17') {                    
-                    withCredentials([usernamePassword(credentialsId: 'nexus-admin-cred', passwordVariable: 'repoPassword', usernameVariable: 'repoUser')]) {
-                       sh """
-                       echo "repoUser=${repoUser}" > gradle.properties
-                       echo "repoPassword=${repoPassword}" >> gradle.properties
-                       """
-                    }
-                }
-            }
-        }
         stage('Build and Test') {
             steps {
                 container('jdk17') {                                        
