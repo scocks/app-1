@@ -16,7 +16,7 @@ public class Library {
         org.king.plataforma.Library plataforma = new org.king.plataforma.Library();
         org.king.plataformaConsumer1.Library plataformaConsumer1 = new org.king.plataformaConsumer1.Library();
         org.king.libdep1.Library libDep1 = new org.king.libdep1.Library();
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         result.add(plataforma.greet("app1"));
         result.add(plataformaConsumer1.greet("app1"));
         result.add(libDep1.greet("app1"));
@@ -26,7 +26,7 @@ public class Library {
         org.king.plataforma.Library plataforma = new org.king.plataforma.Library();
         org.king.plataformaConsumer1.Library plataformaConsumer1 = new org.king.plataformaConsumer1.Library();
         org.king.libdep1.Library libDep1 = new org.king.libdep1.Library();
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         result.add(plataforma.greet("app1"));
         result.add(plataforma.greet1("app1"));
         result.add(plataforma.greet2("app1"));
