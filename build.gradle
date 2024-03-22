@@ -30,6 +30,7 @@ dependencies {
     implementation 'org.king.libDep3:lib-dep-3'
     implementation 'org.king.libDep4:lib-dep-4'
     implementation 'org.king.libDep5:lib-dep-5'
+    implementation 'com.google.code.gson:gson:2.8.8'
     implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
     implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -59,4 +60,8 @@ sonar {
         property 'sonar.token', 'sqa_7e6d65b9f302f6d68761a5d70e4ab9e5786ff085'
         property 'sonar.gradle.skipCompile', 'true'
     }
+}
+
+run {    
+     args project.hasProperty('files') ? project.files : ''
 }

@@ -3,6 +3,8 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+people.json
+gradle.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -25,7 +27,6 @@ out/
 .springBeans
 .sts4-cache
 bin/
-gradle.properties
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
