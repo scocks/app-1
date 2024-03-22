@@ -1,12 +1,4 @@
 [
   {"name": "John Doe", "address": "123 Elm Street", "title": "Software Engineer", "age": 30, "gender": "Male", "ethnicBackground": "Caucasian"},
-  {"name": "Jane Smith", "address": "456 Pine Street", "title": "Project Manager", "age": 32, "gender": "Female", "ethnicBackground": "Asian"},
-  {"name": "Michael Brown", "address": "789 Maple Street", "title": "DevOps Specialist", "age": 28, "gender": "Male", "ethnicBackground": "African American"},
-  {"name": "Emily Johnson", "address": "101 Oak Street", "title": "UX Designer", "age": 26, "gender": "Female", "ethnicBackground": "Hispanic"},
-  {"name": "David Wilson", "address": "202 Birch Street", "title": "Database Administrator", "age": 35, "gender": "Male", "ethnicBackground": "Native American"},
-  {"name": "Sarah Miller", "address": "303 Cedar Street", "title": "Web Developer", "age": 24, "gender": "Female", "ethnicBackground": "Pacific Islander"},
-  {"name": "James Anderson", "address": "404 Dogwood Street", "title": "Network Engineer", "age": 29, "gender": "Male", "ethnicBackground": "Middle Eastern"},
-  {"name": "Patricia Taylor", "address": "505 Fir Street", "title": "Information Security Analyst", "age": 31, "gender": "Female", "ethnicBackground": "Mixed Race"},
-  {"name": "Robert Jackson", "address": "606 Elm Street", "title": "Cloud Solutions Architect", "age": 37, "gender": "Male", "ethnicBackground": "South Asian"},
-  {"name": "Linda Martinez", "address": "707 Pine Street", "title": "IT Support Specialist", "age": 25, "gender": "Female", "ethnicBackground": "Other"}
+  {"name": "Jane Smith", "address": "456 Pine Street", "title": "Project Manager", "age": 32, "gender": "Female", "ethnicBackground": "Asian"}
 ]
