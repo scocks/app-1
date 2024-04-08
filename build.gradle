@@ -3,10 +3,13 @@ plugins {
     id 'org.sonarqube' version '4.4.1.3373'
     id 'jacoco'
     id 'application'
+    id "com.sidneysimmons.gradle-plugin-external-properties" version "2.0.1"       
 }
 
 group 'org.king.app1'
-version '1.0-SNAPSHOT'
+version = "1.0.0-SNAPSHOT"
+
+apply plugin: "com.dipien.semantic-version"
 
 repositories {
     mavenCentral()
@@ -18,8 +21,12 @@ repositories {
     }
 }
 
+externalProperties {
+    propertiesFileResolver file("versions.properties")
+}
+
 dependencies {
-    implementation platform('org.king.plataforma-ecosystem-bom:plataforma-ecosystem-bom:1.0.0-SNAPSHOT')    
+    implementation platform("org.king.plataforma-ecosystem-bom:plataforma-ecosystem-bom:${props.get('plataforma-ecosystem-bom')}")    
     implementation 'org.king.plataforma:plataforma'
     implementation 'org.king.plataformaConsumer1:plataformaConsumer1'
     implementation 'org.king.plataformaConsumer2:plataformaConsumer2'
